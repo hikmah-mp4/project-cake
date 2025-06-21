@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products - Euphoria Cake</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logoContent">
+        <a href="index.html" class="logo"><img src="img/logo2.png" alt="" /></a>
+        <h1 class="logoName">Euphoria Cake</h1>
+      </div>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="index.html#aboutus">about us</a>
+        <a href="index.html#product">product</a>
+        <a href="index.html#blogs">blogs</a>
+        <a href="index.html#review">review</a>
+        <a href="index.html#contact">contact</a>
+      </nav>
+    </header>
+
+    <!-- Product Grid Section -->
+    <section class="product-list-page">
+      <div class="heading">
+        <h2>All Our Cakes</h2>
+        <div class="underline"></div>
+        <p>Temukan semua koleksi cake Euphoria yang cantik dan menggoda.</p>
+      </div>
+
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-product"
+          placeholder="Cari kue..." />
+      </div>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="img/Blue Bliss Cake.jpeg" alt="Blue Bliss Cake" />
+          <h3>Blue Bliss Cake</h3>
+          <p>Rp 120.000</p>
+        </div>
+        <div class="product-card">
+          <img src="img/kueee.jpeg" alt="Purple Birthday" />
+          <h3>Purple Birthday</h3>
+          <p>Rp 110.000</p>
+        </div>
+        <div class="product-card">
+          <img src="img/pastel puff cake.jpeg" alt="Pastel Puff Cake" />
+          <h3>Pastel Puff Cake</h3>
+          <p>Rp 125.000</p>
+        </div>
+        <div class="product-card">
+          <img src="img/cake.jpeg" alt="Moonlight Cake" />
+          <h3>Moonlight Cake</h3>
+          <p>Rp 115.000</p>
+        </div>
+        <div class="product-card">
+          <img
+            src="img/WhatsApp Image 2025-05-23 at 15.33.11.jpeg"
+            alt="Mariposa Cake" />
+          <h3>Mariposa Cake</h3>
+          <p>Rp 130.000</p>
+        </div>
+        <div class="product-card">
+          <img src="img/cakeee.jpeg" alt="Pink Blush Cake" />
+          <h3>Pink Blush Cake</h3>
+          <p>Rp 120.000</p>
+        </div>
+        <div class="product-card">
+          <img src="img/keluarga.jpeg" alt="Sweet Embrace" />
+          <h3>Sweet Embrace</h3>
+          <p>Rp 135.000</p>
+        </div>
+        <div class="product-card">
+          <img src="img/cakeeeee.jpeg" alt="Caron Cake" />
+          <h3>Caron Cake</h3>
+          <p>Rp 115.000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional Footer -->
+    <footer class="footer" id="footer">
+      <div class="box-container">
+        <div class="mainBox">
+          <div class="content">
+            <a href="#"><img src="img/logo2.png" alt="" /></a>
+            <h1 class="logoName">Euphoria Cake</h1>
+          </div>
+          <p>Kue yang cocok di nikmati di setiap moment.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-product");
+        const productCards = document.querySelectorAll(".product-card");
+    
+        searchInput.addEventListener("input", function () {
+          const keyword = searchInput.value.toLowerCase();
+    
+          let found = false;
+    
+          productCards.forEach(card => {
+            const title = card.querySelector("h3").textContent.toLowerCase();
+            if (title.includes(keyword)) {
+              card.style.display = "block";
+              found = true;
+            } else {
+              card.style.display = "none";
+            }
+          });
+    
+          // Optional: tampilkan pesan jika tidak ada hasil
+          let noResult = document.getElementById("no-result");
+          if (!noResult) {
+            noResult = document.createElement("p");
+            noResult.id = "no-result";
+            noResult.textContent = "Produk tidak ditemukan.";
+            noResult.style.textAlign = "center";
+            noResult.style.color = "#999";
+            noResult.style.marginTop = "1rem";
+            searchInput.parentNode.appendChild(noResult);
+          }
+          noResult.style.display = found ? "none" : "block";
+        });
+      });
+    </script>
+    
+  </body>
+</html>

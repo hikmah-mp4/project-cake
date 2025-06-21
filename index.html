@@ -37,12 +37,7 @@
       </nav>
 
       <div class="icon">
-        <i class="fas fa-search" id="search"></i>
         <i class="fas fa-bars" id="menu-bar"></i>
-      </div>
-
-      <div class="search">
-        <input type="search" placeholder="search..." />
       </div>
     </header>
     <!-- header section end here  -->
@@ -53,7 +48,7 @@
         <h2>Delicious Cake for Everyone</h2>
         <p>Kue yang cocok di nikmati di setiap moment</p>
         <div class="home-btn">
-          <a href="#"><button>see more</button></a>
+          <a href="product.html"><button>see more</button></a>
         </div>
       </div>
     </section>
@@ -134,9 +129,6 @@
             <div class="product-content">
               <h3>Blue Bliss Cake</h3>
               <p>Rp 120.000</p>
-              <div class="orderNow">
-                <button>Order Now</button>
-              </div>
             </div>
           </div>
           <div class="swiper-slide box">
@@ -146,9 +138,6 @@
             <div class="product-content">
               <h3>Purple Birthday</h3>
               <p>Rp 110.000</p>
-              <div class="orderNow">
-                <button>Order Now</button>
-              </div>
             </div>
           </div>
           <div class="swiper-slide box">
@@ -158,9 +147,6 @@
             <div class="product-content">
               <h3>Pastel Puff Cake</h3>
               <p>Rp 125.000</p>
-              <div class="orderNow">
-                <button>Order Now</button>
-              </div>
             </div>
           </div>
           <div class="swiper-slide box">
@@ -170,9 +156,6 @@
             <div class="product-content">
               <h3>Moonlight Cake</h3>
               <p>Rp 115.000</p>
-              <div class="orderNow">
-                <button>Order Now</button>
-              </div>
             </div>
           </div>
         </div>
@@ -189,9 +172,6 @@
             <div class="product-content">
               <h3>Mariposa Cake</h3>
               <p>Rp 130.000</p>
-              <div class="orderNow">
-                <button>Order Now</button>
-              </div>
             </div>
           </div>
           <div class="swiper-slide box">
@@ -201,9 +181,6 @@
             <div class="product-content">
               <h3>Pink Blush Cake</h3>
               <p>Rp 120.000</p>
-              <div class="orderNow">
-                <button>Order Now</button>
-              </div>
             </div>
           </div>
           <div class="swiper-slide box">
@@ -213,9 +190,6 @@
             <div class="product-content">
               <h3>Sweet Embrace</h3>
               <p>Rp 135.000</p>
-              <div class="orderNow">
-                <button>Order Now</button>
-              </div>
             </div>
           </div>
           <div class="swiper-slide box">
@@ -225,9 +199,6 @@
             <div class="product-content">
               <h3>Caron Cake</h3>
               <p>Rp 115.000</p>
-              <div class="orderNow">
-                <button>Order Now</button>
-              </div>
             </div>
           </div>
         </div>
@@ -256,7 +227,6 @@
                 kupu-kupu edible berwarna biru pastel, kue ini memancarkan
                 nuansa magis dan romantis seperti dalam mimpi.
               </p>
-              <a href="#blogs" class="btn">learn more</a>
             </div>
           </div>
           <div class="swiper-slide box">
@@ -271,7 +241,6 @@
                 whipped cream swirl. Sentuhan pita gingham merah memberi kesan
                 vintage dan playful yang siap mempercantik meja perayaanmu!
               </p>
-              <a href="#blogs" class="btn">learn more</a>
             </div>
           </div>
           <div class="swiper-slide box">
@@ -287,7 +256,6 @@
                 mutiara silver, dan buttercream swirl seperti awan—kue ini
                 menciptakan nuansa anggun dan magis dalam satu gigitan.
               </p>
-              <a href="#blogs" class="btn">learn more</a>
             </div>
           </div>
         </div>
@@ -345,10 +313,6 @@
           <span>Mariposa Cake</span>
         </div>
       </div>
-
-      <div class="view-all-button">
-        <a href="#">View All Reviews</a>
-      </div>
     </section>
 
     <!-- review section ends here  -->
@@ -395,13 +359,17 @@
 
         <!-- Contact Form -->
         <div class="contact-form">
-          <form>
+          <form id="contactForm">
             <div class="form-row">
-              <input type="text" placeholder="Nama" required />
-              <input type="email" placeholder="Emaill" required />
+              <input type="text" id="nama" placeholder="Nama" required />
+              <input type="email" id="email" placeholder="Email" required />
             </div>
-            <input type="text" placeholder="Subject" required />
-            <textarea placeholder="Pesan Anda..." rows="5" required></textarea>
+            <input type="text" id="subject" placeholder="Subject" required />
+            <textarea
+              id="pesan"
+              placeholder="Pesan Anda..."
+              rows="5"
+              required></textarea>
             <button type="submit">Kirim Pesan</button>
           </form>
         </div>
@@ -435,12 +403,6 @@
           <a href="#"> <i class="fas fa-phone"></i>08124542654</a>
           <a href="#"> <i class="fas fa-envelope"></i>euphoriacake@gmail.com</a>
         </div>
-      </div>
-
-      <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
       </div>
     </footer>
     <!-- swiper js link  -->
